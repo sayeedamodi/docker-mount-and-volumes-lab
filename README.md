@@ -107,7 +107,7 @@ docker run mount-test-1
 
 
 ```
-<img width="350" height="43" alt="Screenshot 2026-06-16 183447" src="https://github.com/user-attachments/assets/e4ca8e13-a94f-4442-8f9c-a95c468c93cc" />
+
 
 ```
 Now edit `app.py` to say v2, build a *second* image, and run both:
@@ -122,6 +122,8 @@ docker build -t mount-test-2 .
 docker run mount-test-1   # → Hello World this is v1
 docker run mount-test-2   # → Hello World this is v2
 ```
+
+<img width="350" height="43" alt="Screenshot 2026-06-16 183447" src="https://github.com/user-attachments/assets/e4ca8e13-a94f-4442-8f9c-a95c468c93cc" />
 <img width="350" height="43" alt="Screenshot 2026-06-16 183447" src="https://github.com/user-attachments/assets/b3d4bc88-9ea0-46bb-a725-9971568c6b7f" />
 
 <img width="165" height="41" alt="Screenshot 2026-06-16 183738" src="https://github.com/user-attachments/assets/8028d901-f84f-4dfd-8289-daab1b98ffd4" />
