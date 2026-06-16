@@ -107,8 +107,9 @@ docker run mount-test-1
 
 
 ```
-
+---
 <img width="350" height="43" alt="Screenshot 2026-06-16 183447" src="https://github.com/user-attachments/assets/e4ca8e13-a94f-4442-8f9c-a95c468c93cc" />
+---
 
 
 Now edit `app.py` to say v2, build a *second* image, and run both:
