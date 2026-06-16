@@ -183,15 +183,12 @@ cd 02-bind-mount
 # Step 1: Run with a bind mount (no rebuild needed)
 docker run --rm -v $(pwd):/app mount-test-2
 # Output: Hello World this is v2
-```
-<img width="165" height="41" alt="Screenshot 2026-06-16 183738" src="https://github.com/user-attachments/assets/47c95d9e-f5b5-485a-8f04-44340d168a55" />
-```
+
+
 
 # Step 2: Edit app.py on your laptop (no docker build!)
 # Change it to: print("Hello World this is from mount point")
 
-```
-<img width="236" height="67" alt="Screenshot 2026-06-16 184036" src="https://github.com/user-attachments/assets/b40c363c-64db-4e62-a570-41d18d79e93d" />
 ```
 
 # Step 3: Run again — no rebuild
@@ -200,10 +197,10 @@ docker run --rm -v $(pwd):/app mount-test-2
 
 ```
 <img width="311" height="94" alt="Screenshot 2026-06-16 184048" src="https://github.com/user-attachments/assets/0c406fec-2432-4988-8b7f-6c8c78cc095e" />
-
+<img width="236" height="67" alt="Screenshot 2026-06-16 184036" src="https://github.com/user-attachments/assets/b40c363c-64db-4e62-a570-41d18d79e93d" />
 ```
 ```
-
+<img width="165" height="41" alt="Screenshot 2026-06-16 183738" src="https://github.com/user-attachments/assets/47c95d9e-f5b5-485a-8f04-44340d168a55" />
 ### What Happened
 
 You changed `app.py` on your laptop and the container immediately saw the new version — **without a single `docker build`.**
